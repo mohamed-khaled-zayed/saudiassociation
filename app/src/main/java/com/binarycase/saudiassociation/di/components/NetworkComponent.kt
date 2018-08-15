@@ -16,7 +16,7 @@ import javax.inject.Singleton
     modules = [ApplicationModule::class, NetworkModule::class, ViewModelModule::class, SharedPreferenceModule::class]
 )
 interface NetworkComponent {
-  fun inject(activity: BaseActivityWithInjector)
+//  fun inject(activity: BaseActivityWithInjector)
   fun inject(fragment: BaseFragmentWithInjector)
 
   @Component.Builder

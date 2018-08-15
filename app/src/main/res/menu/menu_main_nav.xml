@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <group android:checkableBehavior="all">
+    <item
+        android:id="@+id/nav_all_sections"
+        android:icon="@drawable/main_list"
+        android:title="@string/sections" />
+  </group>
+  <group android:checkableBehavior="all">
+    <item
+        android:id="@+id/nav_favourite"
+        android:icon="@drawable/main_list"
+        android:title="@string/favourite" />
+  </group>
+  <group android:checkableBehavior="all">
+    <item
+        android:id="@+id/nav_who_are_we"
+        android:icon="@drawable/who_are_we"
+        android:title="@string/who_are_we" />
+  </group>
+  <group android:checkableBehavior="all">
+    <item
+        android:id="@+id/nav_policy"
+        android:icon="@drawable/policy"
+        android:title="@string/usage_policy" />
+  </group>
+
+  <group android:checkableBehavior="all">
+    <item
+        android:id="@+id/nav_call_us"
+        android:icon="@drawable/contact_us"
+        android:title="@string/call_us" />
+
+  </group>
+
+</menu>

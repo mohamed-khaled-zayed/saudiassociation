@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="main_sections_title">جميع الأقسام</string>
+  <string name="who_are_we">من نحن</string>
+  <string name="usage_policy">سياسة الأستخدام</string>
+  <string name="call_us">اتصل بنا</string>
+  <string name="sections">الأقسام</string>
+  <string name="server_error">حدث خطأ ما يرجي اعادة المحاولة مرة اخري</string>
+  <string name="favourite">المفضلة</string>
+</resources>
