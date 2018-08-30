@@ -52,7 +52,7 @@ dependencies {
   implementation 'de.hdodenhof:circleimageview:2.2.0'
   implementation 'com.squareup.picasso:picasso:2.71828'
   implementation 'cn.jzvd:jiaozivideoplayer:6.2.12'
-
+  implementation 'com.blankj:utilcode:1.19.0'
   implementation libs.rxAndroid
   implementation libs.retrofit
   implementation libs.retrofitRxAdapter

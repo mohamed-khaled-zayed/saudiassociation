@@ -11,6 +11,7 @@ import com.binarycase.saudiassociation.utils.Constants
 import com.binarycase.saudiassociation.utils.networkUtils.ConnectivityReciever
 import com.binarycase.saudiassociation.di.components.DaggerApplicationComponent
 import com.binarycase.saudiassociation.di.components.DaggerNetworkComponent
+import com.blankj.utilcode.util.Utils
 import com.tripl3dev.prettystates.StatesConfigFactory
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig
 
@@ -28,6 +29,7 @@ companion object {
         .applicationContext(this)
         .builder()
 
+    Utils.init(this)
     networkComponent = DaggerNetworkComponent.builder()
         .application(this)
         .baseUrl(Constants.BASE_URL)
