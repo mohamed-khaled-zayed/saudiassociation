@@ -81,6 +81,7 @@ class CallUsFragment : BaseFragmentWithInjector() {
 
   private fun setHtmlText(html: String) {
     if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N) {
+
       contentText.text = Html.fromHtml(html)
     } else {
       contentText.text = Html.fromHtml(html, Html.FROM_HTML_MODE_COMPACT)

@@ -130,6 +130,8 @@
           android:layout_marginEnd="@dimen/_2sdp"
           android:layout_marginStart="@dimen/_2sdp"
           android:layout_weight="1"
+          android:lines="1"
+          android:ellipsize="end"
           android:gravity="center"
           android:text="@{categoryModel.wordEn}"
           android:textColor="@color/black"
@@ -142,6 +144,8 @@
           android:layout_marginStart="@dimen/_2sdp"
           android:layout_weight="1"
           android:gravity="center"
+          android:lines="1"
+          android:ellipsize="end"
           android:text="@{categoryModel.wordAr}"
           android:textColor="@color/black"
           />
@@ -152,6 +156,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/_150sdp"
         android:layout_margin="@dimen/_8sdp"
+
         bind:videoUrl="@{categoryModel.videoFile}"
         app:layout_constraintTop_toBottomOf="@+id/barrier3"
         />

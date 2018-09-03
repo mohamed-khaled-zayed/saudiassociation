@@ -291,7 +291,8 @@ class CategorySubListFragment : BaseFragmentWithInjector() {
               }
             }
             is PaginationError -> {
-              paginate.showError(true)
+//              paginate.showError(true)
+                Toast.makeText(context,R.string.server_error,Toast.LENGTH_SHORT).show()
             }
             is PaginationFinished -> {
               endPaginate(true)
