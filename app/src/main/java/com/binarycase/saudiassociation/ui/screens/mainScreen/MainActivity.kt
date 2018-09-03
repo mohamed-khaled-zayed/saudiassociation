@@ -33,11 +33,6 @@ class MainActivity : AppCompatActivity() {
       setHomeAsUpIndicator(R.drawable.nav_menu)
       setTitle(R.string.main_sections_title)
     }
-//    nvView.getHeaderView(0)
-//        .findViewById<TextView>(R.id.sectionsListItem)
-//        .setOnClickListener {
-//          toggleDrawer()
-//        }
     supportFragmentManager.beginTransaction()
         .replace(R.id.fragmentContent, MainSectionsFragment(), FRAGMENT_MAIN_SECTIONS)
         .commit()

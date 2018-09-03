@@ -112,7 +112,7 @@ class SearchCategoryFragment : BaseFragmentWithInjector() {
         val itemBinding = DataBindingUtil.bind<ExamsListItemBinding>(holder.itemView)
         itemBinding?.isExpanded = t.isExpanded
         itemBinding?.categoryModel = t
-        itemBinding?.imageButton?.setOnClickListener {
+        itemBinding?.root?.setOnClickListener {
           t.isExpanded.set(!t.isExpanded.get())
         }
         itemBinding?.imageButton2?.setOnClickListener {

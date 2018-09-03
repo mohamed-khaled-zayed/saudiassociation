@@ -9,7 +9,7 @@
   <group android:checkableBehavior="all">
     <item
         android:id="@+id/nav_favourite"
-        android:icon="@drawable/main_list"
+        android:icon="@drawable/favourite_menu"
         android:title="@string/favourite" />
   </group>
   <group android:checkableBehavior="all">
