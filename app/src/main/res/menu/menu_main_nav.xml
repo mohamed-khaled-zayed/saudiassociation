@@ -6,10 +6,17 @@
         android:icon="@drawable/main_list"
         android:title="@string/sections" />
   </group>
+
+  <group android:checkableBehavior="all">
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/search_nav"
+        android:title="@string/search" />
+  </group>
   <group android:checkableBehavior="all">
     <item
         android:id="@+id/nav_favourite"
-        android:icon="@drawable/main_list"
+        android:icon="@drawable/favourite_menu"
         android:title="@string/favourite" />
   </group>
   <group android:checkableBehavior="all">

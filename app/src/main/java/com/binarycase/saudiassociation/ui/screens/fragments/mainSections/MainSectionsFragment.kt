@@ -4,12 +4,12 @@ import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModel
 import android.databinding.DataBindingUtil
 import android.os.Bundle
-import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.RecyclerView.ViewHolder
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import cn.jzvd.JZDataSource
 import com.binarycase.saudiassociation.R
 import com.binarycase.saudiassociation.databinding.MainSectionsListItemBinding
 import com.binarycase.saudiassociation.models.SectionsModel
@@ -34,6 +34,8 @@ class MainSectionsFragment : BaseFragmentWithInjector() {
   lateinit var mainSectionVM: MainSectionsViewModel
 
   override fun getActivityVM(): Class<out ViewModel> {
+
+
     return MainSectionsViewModel::class.java
 
   }

@@ -71,6 +71,7 @@
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:clickable="false"
         android:background="@android:color/transparent"
         android:src="@{isExpanded?@drawable/up_arrow:@drawable/down_arrow}"
         app:layout_constraintBottom_toBottomOf="@+id/headerContainer"
@@ -129,6 +130,8 @@
           android:layout_marginEnd="@dimen/_2sdp"
           android:layout_marginStart="@dimen/_2sdp"
           android:layout_weight="1"
+          android:lines="1"
+          android:ellipsize="end"
           android:gravity="center"
           android:text="@{categoryModel.wordEn}"
           android:textColor="@color/black"
@@ -141,16 +144,19 @@
           android:layout_marginStart="@dimen/_2sdp"
           android:layout_weight="1"
           android:gravity="center"
+          android:lines="1"
+          android:ellipsize="end"
           android:text="@{categoryModel.wordAr}"
           android:textColor="@color/black"
           />
 
     </LinearLayout>
-    <cn.jzvd.JZVideoPlayerStandard
+    <com.binarycase.saudiassociation.utils.JzvdStdAutoCompleteAfterFullscreen
         android:id="@+id/JZVideoPlayerStandard"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_150sdp"
         android:layout_margin="@dimen/_8sdp"
+
         bind:videoUrl="@{categoryModel.videoFile}"
         app:layout_constraintTop_toBottomOf="@+id/barrier3"
         />
