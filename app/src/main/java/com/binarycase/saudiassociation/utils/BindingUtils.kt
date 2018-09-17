@@ -3,12 +3,11 @@ package com.binarycase.saudiassociation.utils
 import android.databinding.BindingAdapter
 import android.view.View
 import android.widget.ImageView
-import cn.jzvd.JZVideoPlayerStandard
 import com.squareup.picasso.Picasso
 import android.content.Intent
-import android.content.pm.ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
 import android.graphics.Color
-import android.support.v4.content.ContextCompat.startActivity
+import cn.jzvd.JZDataSource
+import cn.jzvd.JzvdStd
 import java.util.Random
 
 @BindingAdapter("bind:imageUrl")
@@ -20,8 +19,10 @@ fun ImageView.loadUrl(imageUrl: String) {
 
 
 @BindingAdapter("bind:videoUrl")
-fun JZVideoPlayerStandard.loadVideo(videoUrl: String) {
-  this.setUp(videoUrl,cn.jzvd.JZVideoPlayer.SCREEN_WINDOW_LIST)
+fun JzvdStdAutoCompleteAfterFullscreen.loadVideo(videoUrl: String) {
+//    val dataSource = JZDataSource(videoUrl)
+//    dataSource.looping = true
+  this.setUp(JZDataSource(videoUrl),cn.jzvd.Jzvd.SCREEN_WINDOW_LIST)
 
 }
 
@@ -31,6 +32,7 @@ fun View.setShareText(shareBody : String){
   this.setOnClickListener {
     val sharingIntent = Intent(android.content.Intent.ACTION_SEND)
     sharingIntent.type = "text/plain"
+
     sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody)
     this.context.startActivity(Intent.createChooser(sharingIntent,"Share Through"))
   }

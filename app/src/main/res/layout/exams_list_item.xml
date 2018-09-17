@@ -151,7 +151,7 @@
           />
 
     </LinearLayout>
-    <cn.jzvd.JZVideoPlayerStandard
+    <com.binarycase.saudiassociation.utils.JzvdStdAutoCompleteAfterFullscreen
         android:id="@+id/JZVideoPlayerStandard"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_150sdp"

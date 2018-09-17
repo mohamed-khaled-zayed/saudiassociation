@@ -11,6 +11,8 @@ import com.binarycase.saudiassociation.R
 import com.binarycase.saudiassociation.ui.screens.mainScreen.MainActivity
 import com.binarycase.saudiassociation.utils.DeviceUtils
 import com.blankj.utilcode.util.PhoneUtils
+import com.bumptech.glide.Glide
+import kotlinx.android.synthetic.main.activity_splash.*
 
 class SplashActivity : AppCompatActivity() {
 
@@ -20,9 +22,10 @@ class SplashActivity : AppCompatActivity() {
     this.window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
     setContentView(R.layout.activity_splash)
     DeviceUtils.init(this)
+    Glide.with(this@SplashActivity).asGif().load(R.drawable.splash_gif).into(splashScreen)
     Handler().postDelayed({
       startActivity(Intent(this@SplashActivity,MainActivity::class.java))
       finish()
-    },1000)
+    },3000)
   }
 }

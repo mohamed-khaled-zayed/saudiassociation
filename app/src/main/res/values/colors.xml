@@ -8,4 +8,5 @@
   <color name="black">#000</color>
   <color name="white">#fff</color>
   <color name="light_gray">#ededed</color>
+  <color name="action_bar">#0e3d51</color>
 </resources>

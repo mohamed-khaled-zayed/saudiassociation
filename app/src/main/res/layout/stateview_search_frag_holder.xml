@@ -8,8 +8,9 @@
   <TextView
       android:layout_width="match_parent"
       android:layout_height="match_parent"
-      android:text="Search For words"
-      android:gravity="center"
+      android:text="@string/search_for_word"
+      android:gravity="center_horizontal"
+      android:layout_marginTop="@dimen/_24sdp"
       android:textColor="@color/black"
       />
 </LinearLayout>

@@ -12,7 +12,39 @@
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
         android:fitsSystemWindows="true"
+
         android:theme="@style/ToolbarStyle">
+        <LinearLayout
+            android:id="@+id/searchInToolbarContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            >
+        <EditText
+            android:id="@+id/searchField"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:cursorVisible="true"
+            android:paddingStart="@dimen/_2sdp"
+            android:paddingEnd="@dimen/_2sdp"
+            android:hint="ابحث عن"
+            android:textCursorDrawable="@color/colorAccent"
+            android:background="@drawable/search_field_toolbar"
+            />
+            <ImageButton
+                android:id="@+id/searchBt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search"
+                android:background="@android:color/transparent"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:padding="@dimen/_4sdp"
+                />
+        </LinearLayout>
 
     </android.support.v7.widget.Toolbar>
 

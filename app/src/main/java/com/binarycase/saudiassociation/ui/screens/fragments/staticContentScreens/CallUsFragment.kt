@@ -17,8 +17,11 @@ import com.binarycase.saudiassociation.utils.StateView.Loading
 import com.binarycase.saudiassociation.utils.StateView.Success
 import com.tripl3dev.prettystates.StatesConstants
 import com.tripl3dev.prettystates.setState
-import kotlinx.android.synthetic.main.static_content_fragment.contentText
-import kotlinx.android.synthetic.main.static_content_fragment.textContainer
+import kotlinx.android.synthetic.main.static_content_fragment.*
+import android.content.Intent
+import android.net.Uri
+import java.util.*
+
 
 class CallUsFragment : BaseFragmentWithInjector() {
 
@@ -51,6 +54,22 @@ class CallUsFragment : BaseFragmentWithInjector() {
     super.onViewCreated(view, savedInstanceState)
     setContentListener()
     viewModel.fetchData(StaticContentViewModel.CALL_US)
+    goToLocation.visibility =View.VISIBLE
+    goToLocation.setOnClickListener {
+      try {
+
+        val destinationLatitude =30
+        val destinationLongitude =31
+
+        val uri = "http://maps.google.com/maps?daddr=$destinationLatitude,$destinationLongitude"
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(uri))
+        intent.setPackage("com.google.android.apps.maps")
+        startActivity(intent)
+      }catch (e:Exception){
+        e.printStackTrace()
+      }
+
+    }
   }
 
   private fun setContentListener() {
@@ -58,7 +77,7 @@ class CallUsFragment : BaseFragmentWithInjector() {
         .observe(this, Observer {
           when (it) {
             is Success<*> -> {
-              var content = it.data as String
+              val content = it.data as String
               textContainer.setState(StatesConstants.NORMAL_STATE)
               setHtmlText(content)
             }

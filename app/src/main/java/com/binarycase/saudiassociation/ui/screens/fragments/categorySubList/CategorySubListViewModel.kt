@@ -141,7 +141,8 @@ class CategorySubListViewModel @Inject constructor(val serviceApi: ApiService) :
   }
 
   fun searchForExamsList(
-    query: String?
+    query: String?,
+    categId: Int
   ) {
     if (!inPagination())
       categSubListener.postValue(Loading)
@@ -150,7 +151,7 @@ class CategorySubListViewModel @Inject constructor(val serviceApi: ApiService) :
 
   searchCall =    serviceApi.searchInSubCategories(
         Constants.CONTENT_TYPE, Constants.APP_AUTH,
-        SubCategorySearchRequest(query ?: "", DeviceUtils.getInstance()!!.deviceToken, currentPage)
+        SubCategorySearchRequest(query ?: "", DeviceUtils.getInstance()!!.deviceToken, currentPage,categId)
     )
 
     searchCall.enqueue(object : Callback<CategSubListResponse> {

@@ -152,14 +152,14 @@ class CategorySubListFragment : BaseFragmentWithInjector() {
           paginate.showLoading(true)
           if (viewModel.inPagination()) {
             if (inSearching) {
-              viewModel.searchForExamsList(currentQuery)
+              viewModel.searchForExamsList(currentQuery,catId)
             } else {
               viewModel.fetchSectionsList(catId)
             }
           } else {
             categorySubList.setState(StatesConstants.LOADING_STATE)
             if (inSearching) {
-              viewModel.searchForExamsList(currentQuery)
+              viewModel.searchForExamsList(currentQuery,catId)
             } else {
               viewModel.fetchSectionsList(catId)
             }
@@ -176,7 +176,7 @@ class CategorySubListFragment : BaseFragmentWithInjector() {
     viewModel = vm as CategorySubListViewModel
     subCategoryListListener()
     setUpListView()
-    viewModel.fetchSectionsList(catId)
+//    viewModel.fetchSectionsList(catId)
   }
 
 
@@ -285,7 +285,7 @@ class CategorySubListFragment : BaseFragmentWithInjector() {
                   .findViewById<Button>(R.id.retryButton)
               retryBt.setOnClickListener {
                 if (inSearching)
-                  viewModel.searchForExamsList(currentQuery)
+                  viewModel.searchForExamsList(currentQuery,catId)
                 else
                   viewModel.fetchSectionsList(catId)
               }
@@ -311,7 +311,7 @@ class CategorySubListFragment : BaseFragmentWithInjector() {
   private var currentQuery: String = ""
 
   fun searchFor(query: String?) {
-    viewModel.searchForExamsList(query)
+    viewModel.searchForExamsList(query,catId)
     currentQuery = query ?: ""
   }
 
