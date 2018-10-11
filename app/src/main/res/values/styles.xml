@@ -19,4 +19,30 @@
     <item name="colorAccent">@color/white</item>
   </style>
 
+  <style name="AppTheme.FullScreen" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+    <item name="android:windowFullscreen">true</item>
+
+  </style>
+
+  <style name="EditText1Style">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">42dp</item>
+    <item name="android:background">@drawable/edittext_drawable1</item>
+    <item name="android:textColorHint">@color/edittext_hint_color</item>
+    <item name="android:textColor">@color/text_color</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+  <style name="EditText1StyleRed">
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:layout_height">@dimen/_40sdp</item>
+    <item name="android:background">@drawable/edittext_red</item>
+    <item name="android:textColorHint">@color/edittext_hint_color</item>
+    <item name="android:textColor">@color/text_color</item>
+    <item name="android:gravity">center</item>
+  </style>
 </resources>

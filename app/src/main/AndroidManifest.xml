@@ -28,6 +28,43 @@
         <category android:name="android.intent.category.LAUNCHER"/>
       </intent-filter>
     </activity>
+
+    <activity android:name=".loginRegister.ui.activity.BaseActivity" />
+
+    <activity
+        android:name=".loginRegister.ui.activity.SignInActivity"
+        android:theme="@style/AppTheme.FullScreen"
+        android:configChanges="orientation|screenSize|keyboardHidden"
+        android:screenOrientation="portrait"/>
+
+    <activity
+        android:name=".loginRegister.ui.activity.SignUpActivity"
+        android:theme="@style/AppTheme.FullScreen"
+        android:configChanges="orientation|screenSize|keyboardHidden"
+        android:screenOrientation="portrait"/>
+
+    <activity
+        android:name=".loginRegister.ui.activity.CompleteAccountCreatationActivity"
+        android:theme="@style/AppTheme.FullScreen"
+        android:configChanges="orientation|screenSize|keyboardHidden"
+        android:screenOrientation="portrait"/>
+    <activity
+        android:name=".loginRegister.ui.activity.ForgetPasswordActivity"
+        android:theme="@style/AppTheme.FullScreen"
+        android:configChanges="orientation|screenSize|keyboardHidden"
+        android:screenOrientation="portrait"/>
+
+    <activity android:name=".loginRegister.ui.activity.ResetPasswordActivity"
+        android:theme="@style/AppTheme.FullScreen"
+        android:configChanges="orientation|screenSize|keyboardHidden"
+        android:screenOrientation="portrait"/>
+
+    <activity android:name=".loginRegister.ui.activity.CheckCodeActivity"
+        android:theme="@style/AppTheme.FullScreen"
+        android:configChanges="orientation|screenSize|keyboardHidden"
+        android:screenOrientation="portrait">
+
+    </activity>
   </application>
 
 </manifest>

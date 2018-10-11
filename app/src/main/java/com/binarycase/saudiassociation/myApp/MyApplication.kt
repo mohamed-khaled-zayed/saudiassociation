@@ -13,6 +13,7 @@ import com.binarycase.saudiassociation.utils.Constants
 import com.binarycase.saudiassociation.utils.networkUtils.ConnectivityReciever
 import com.binarycase.saudiassociation.di.components.DaggerApplicationComponent
 import com.binarycase.saudiassociation.di.components.DaggerNetworkComponent
+import com.binarycase.saudiassociation.loginRegister.network.RetrofitModule
 import com.blankj.utilcode.util.Utils
 import com.tripl3dev.prettystates.StatesConfigFactory
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig
@@ -27,6 +28,9 @@ companion object {
 }
   override fun onCreate() {
     super.onCreate()
+
+    RetrofitModule.intialize(this)
+
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
       NetworkSecurityPolicy.getInstance().isCleartextTrafficPermitted
     }

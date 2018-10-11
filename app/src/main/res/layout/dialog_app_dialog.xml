@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_background"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f9f9fa"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+
+        <TextView
+
+            android:id="@+id/dialog_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#73289e"
+            android:minHeight="60dp"
+            android:gravity="center"
+            tools:text="sasssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <Button
+                android:id="@+id/dialog_button_action2"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                tools:text="#612185"
+                android:textColor="@android:color/white"
+                android:background="@drawable/sign_up_button" />
+
+            <Button
+                android:id="@+id/dialog_button_action1"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                tools:text="sas"
+                android:textColor="@android:color/white"
+                android:background="@drawable/sign_in_button" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

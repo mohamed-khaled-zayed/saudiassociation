@@ -10,4 +10,57 @@
   <string name="favourite">المفضلة</string>
     <string name="search">البحث</string>
     <string name="search_for_word">اكتب كلمة في مربع البحث ليتم البحث عليها في القاموس</string>
+  <string name="phone_number">رقم الجوال</string>
+  <string name="_966">966</string>
+  <string name="password_hint">كلمة المرور</string>
+  <string name="forget_password_html"><![CDATA[
+<u>نسيت كلمة المرور‫!‬</u>
+    ]]></string>
+  <string name="login_text">تسجيل دخول</string>
+  <string name="discover_app">اكتشف التطبيق</string>
+  <string name="user_name_hint">اسم المستخدم</string>
+  <string name="email_hint">البريد الالكترونى</string>
+  <string name="next">التالى</string>
+  <string name="agree_shroot_html"><![CDATA[
+<u>أوافق على الشروط و الأحكام  والتعهد</u>
+    ]]></string>
+  <string name="chech_code">رمز التحقق</string>
+  <string name="complete_create_new_account">اتمام انشاء الحساب</string>
+  <string name="sms_code"><![CDATA[
+<u>اعاده ارسال رمز التحقق</u>
+    ]]></string>
+  <string name="rest_password">إستعادة كلمة المرور</string>
+  <string name="will_send_u_code_by_mail">سيصلك رمز التحقق عبر الجوال</string>
+  <string name="agree_shroot">اوافق على شروط الاستخدام</string>
+  <string name="agree">موافق</string>
+  <string name="dialog_ok">موافق</string>
+  <string name="dialog_cancel">إلغاء</string>
+  <string name="u_are_not_registered">أنت غير مسجل فى التطبيق.هل ترغب فى تسجيل مستخدم؟</string>
+  <string name="register_user">تسجيل دخول</string>
+  <string name="dialog_error_no_internet">تحقق من الاتصال بالانترنت.</string>
+  <string name="not_now">ليس ألان</string>
+  <string name="error_dialog_invalid_password">كلمه المرور يجيب الا تقل عن سته احرف.</string>
+  <string name="error_dialog_invalid_phone">رقم الهاتف يجب الا يزيد عن 9 ارقام ولا يبدا بكود الدوله او صفر.</string>
+  <string name="error_dialog_missing_inputs">تحقق من إدخال جميع البيانات.</string>
+  <string name="error_toast_accept_agreement">يجب عليك الموافقه على شروط الاستخدام قبل التسجيل.</string>
+  <string name="verify_code">لم يتم تفعيل رقم الهاتف .</string>
+  <string name="new_password_hint">كلمه المرور الجديده</string>
+  <string name="retype_new_password_hint">اعد ادخال كلمه المرور الجديده</string>
+  <string name="two_password_not_matches">كلمتى السر غير متطابقتين</string>
+    <string name="login_successfully">تم تسجيل الدخول بنجاح</string>
+  <string name="check_email_pass">تحقق من البريد الالكترونى و كلمة المرور</string>
+  <string name="something_went_wrong">حدث خطاء ما برجاء اعادة المحاولة</string>
+  <string name="terms_not_loaded">لم يتم تحميل الشروط و الاحكام</string>
+  <string name="add_new_account_successfully">تم اضافة حساب جديد بنجاح</string>
+  <string name="account_already_exist">رقم الجوال او البريد الالكترونى موجود من قبل</string>
+  <string name="account_verified_successfully">لقد تم تفعيل حسابك بنجاح</string>
+  <string name="account_not_verified">لم يتم تفعيل حسابك حاول مرة اخرى</string>
+  <string name="verify_code_send_successfully">تم ارسال كود التفعيل بنجاح</string>
+  <string name="verify_code_not_send">لم يتم ارسال كود التفعيل حاول مرة اخرى</string>
+  <string name="code_send_successfully">تم ارسال الكود بنجاح</string>
+  <string name="code_not_send">لم يتم ارسال الكود حاول مرة اخرى</string>
+  <string name="code_not_correct">الكود الذى ادخلته غير صحيح</string>
+  <string name="pass_reset_successfully">تم تغير كلمة المرور بنجاح</string>
+  <string name="pass_not_reset">لم يتم تغير كلمة المرور حاول مرة اخرى</string>
+
 </resources>

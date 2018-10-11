@@ -1,6 +1,7 @@
 package com.binarycase.saudiassociation.ui.screens.mainScreen
 
 import android.content.Context
+import android.content.Intent
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.support.multidex.MultiDex
@@ -12,6 +13,8 @@ import android.view.MenuItem
 import android.view.View.GONE
 import android.view.View.VISIBLE
 import com.binarycase.saudiassociation.R
+import com.binarycase.saudiassociation.loginRegister.data.CacheUtils
+import com.binarycase.saudiassociation.loginRegister.ui.activity.SignInActivity
 import com.binarycase.saudiassociation.utils.ContextWrapper
 import com.binarycase.saudiassociation.utils.Localization_Utils
 import com.binarycase.saudiassociation.ui.screens.fragments.staticContentScreens.CallUsFragment
@@ -61,7 +64,12 @@ class MainActivity : AppCompatActivity() {
             drawer_layout.closeDrawers()
             if (it.itemId == R.id.nav_search) {
                 searchInToolbarContainer.visibility = VISIBLE
-            } else {
+            } else if (it.itemId == R.id.nav_logout) {
+                CacheUtils.clearCache(this)
+                startActivity(Intent(this@MainActivity,SignInActivity::class.java))
+                finish()
+            }
+            else {
                 searchInToolbarContainer.visibility = GONE
             }
             when (it.itemId) {

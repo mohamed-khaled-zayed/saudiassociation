@@ -8,6 +8,8 @@ import android.util.Log
 import android.view.Window
 import android.view.WindowManager
 import com.binarycase.saudiassociation.R
+import com.binarycase.saudiassociation.loginRegister.data.CacheUtils
+import com.binarycase.saudiassociation.loginRegister.ui.activity.SignInActivity
 import com.binarycase.saudiassociation.ui.screens.mainScreen.MainActivity
 import com.binarycase.saudiassociation.utils.DeviceUtils
 import com.blankj.utilcode.util.PhoneUtils
@@ -22,10 +24,15 @@ class SplashActivity : AppCompatActivity() {
     this.window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
     setContentView(R.layout.activity_splash)
     DeviceUtils.init(this)
-    Glide.with(this@SplashActivity).asGif().load(R.drawable.splash_gif).into(splashScreen)
+//    Glide.with(this@SplashActivity).asGif().load(R.drawable.splash_gif).into(splashScreen)
     Handler().postDelayed({
-      startActivity(Intent(this@SplashActivity,MainActivity::class.java))
-      finish()
+      if (CacheUtils.checkUserState(this,"isLogin").equals("true")){
+        startActivity(Intent(this@SplashActivity,MainActivity::class.java))
+        finish()
+      }else{
+        startActivity(Intent(this@SplashActivity,SignInActivity::class.java))
+        finish()
+      }
     },3000)
   }
 }

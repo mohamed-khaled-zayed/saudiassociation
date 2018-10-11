@@ -9,4 +9,16 @@
   <color name="white">#fff</color>
   <color name="light_gray">#ededed</color>
   <color name="action_bar">#0e3d51</color>
+
+  <color name="edittext_hint_color">#baa8c8</color>
+  <color name="text_color">#263057</color>
+  <color name="login_bg_color">#0e3d51</color>
+  <color name="sign_in_color">#1797D3</color>
+  <color name="sign_up_color">#D52E71</color>
+  <color name="discover_app_text_color">#fad15a</color>
+  <color name="textview_text_color">#612185</color>
+  <color name="background_color">#e8eaf6</color>
+  <color name="success_toast_color">#8bc34a</color>
+  <color name="fail_toast_color">#ff5a5f</color>
+  <color name="info_toast_color">#3793cc</color>
 </resources>
